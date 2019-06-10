@@ -1,0 +1,27 @@
+{
+  "tareas": [
+    {
+      "titulo": "Tarea 1",
+      "responsable": "Betsy",
+      "descripcion": "Lorem impsum",
+      "prioridad": "baja"
+
+    },
+
+    {
+      "titulo": "Tarea 2",
+      "responsable": "Benjamin",
+      "descripcion": "Lorem impsum 2",
+      "prioridad": "media"
+
+    },
+    {
+      "titulo": "Tarea 3",
+      "responsable": "Alirio",
+      "descripcion": "Lorem impsum 3",
+      "prioridad": "alata"
+
+    }
+     
+  ]
+}
