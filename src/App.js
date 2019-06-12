@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import { tareas } from './tareas.json';
+import { tsAnyKeyword } from '@babel/types';
 
 class App extends Component {
   constructor() {
@@ -12,6 +13,15 @@ class App extends Component {
     }
   }
   render() {
+   const tareas = this.state.tareas.map((tarea, i) => {
+     return (
+       <div className="card">
+       {tarea.titulo}
+       </div>
+     )
+    })
+
+
     return (
       <div className="App">
        <nav className="navbar navbar-dark bg-dark">
@@ -19,6 +29,7 @@ class App extends Component {
            Tareas
          </a>
        </nav>
+       {tareas}
        
 
         <img src={logo} className="App-logo" alt="logo" />
