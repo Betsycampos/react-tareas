@@ -15,8 +15,21 @@ class App extends Component {
   render() {
    const tareas = this.state.tareas.map((tarea, i) => {
      return (
-       <div className="card">
-       {tarea.titulo}
+       <div className="col-md-4">
+         <div className="card mt-4">
+       <div className="card-header">
+       <h1>{tarea.titulo}</h1>
+       <span className="badge badge-pill badge-danger ml-2">
+       {tarea.prioridad}
+       </span>
+       </div>
+       <div className="card-body">
+       <p>{tarea.descripcion}</p>
+       <p><mark>{tarea.responsable}</mark></p>
+       
+
+       </div>
+       </div>
        </div>
      )
     })
@@ -29,7 +42,12 @@ class App extends Component {
            Tareas
          </a>
        </nav>
-       {tareas}
+       <div className="container">
+         <div className="row mt-4">
+          {tareas}
+         </div>
+       </div>
+       
        
 
         <img src={logo} className="App-logo" alt="logo" />
